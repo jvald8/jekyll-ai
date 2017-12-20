@@ -1,10 +1,10 @@
 ---
 ---
 
-$pattern: "{{ site.baseurl }}/images/pattern.png";
+$pattern: "{{ site.baseurl }}/images/data-node-mesh-v3.gif";
 $screenshot-buttons: "{{ site.baseurl }}/images/screenshot-buttons.svg";
 
-$brand-color: #FFA715;
+$brand-color: #FF2800;
 $html-background-color: #222;
 $secondary-brand-color: #FFC461;
 $middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
@@ -14,7 +14,7 @@ $tablet: "(min-width: 450px)";
 $mid-point: "(min-width: 620px)";
 $desktop: "(min-width: 768px)";
 
-$section-rotation: 5deg;
+$section-rotation: 3deg;
 
 @import "elements";
 @import "layout";
