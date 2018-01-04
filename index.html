@@ -1,5 +1,19 @@
 ---
 title: RelativityX
+testimonials:
+  - message: We have been able to predict customers who have at least a 60 percent chance of returning and we've already seen the actual dollar results of these predictions.
+    image: "https://res.cloudinary.com/relativity6-marketing/image/upload/v1495834348/ani-boyo-circle_lsncp7.png"
+    name: Ani Boyo, Marketing Analyst, Coachup
+  - message: We’re very excited to use the intelligence we’ll get from this platform to help us better focus our sales team’s efforts going into our busy season.
+    image: "https://res.cloudinary.com/relativity6-marketing/image/upload/v1495834497/chris-patten-circle_ciywtj.png"
+    name: Christopher Patten, Magellan Jets Operations
+  - message: Artificial Intelligence predictions help us see our existing customers through a completely different lens. We're using these insights to precisely acquire the highest potential new consumer banking customers.
+    image: "https://res.cloudinary.com/relativity6-marketing/image/upload/v1496163406/rodrigo-v2_lpjmsj.png"
+    name: Rodrigo Bonilla, Citibank, VP, Consumer Banking
+_options:
+  image:
+    width: 80
+    height: 80
 ---
 
 <section class="hero diagonal">
@@ -42,6 +56,19 @@ title: RelativityX
 		<div>
 			<h3 class="editable">Latest Data Science, Artificial Intelligence and Machine Learning Methodoligies, greatest perfomance</h3>
 			<p class="editable">We aim to provide state of the art data science based insights in order to boost your company's bottom line.</p>
+		</div>
+	</div>
+</section>
+
+<section class="diagonal">
+	<div class="container">
+		<div class="testimonials">
+			{% for testimonial in page.testimonials %}
+				<blockquote class="testimonial">
+					<p class="testimonial-message">{{ testimonial.message }}</p>
+					<p class="testimonial-author"><img src="{% include relative-src.html src=testimonial.image %}" alt="Photo of {{ testimonial.name }}"> {{ testimonial.name }}</p>
+				</blockquote>
+			{% endfor %}
 		</div>
 	</div>
 </section>
